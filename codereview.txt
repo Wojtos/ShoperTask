@@ -1,0 +1,21 @@
+1. Plik z kodem powinien mieć tylko jedną dodatkową linie na końcu.
+2. Metoda incrementCounter nie jest testowana we wszystkich przypadkach. Dopisuję 3 testy.
+3. Metoda decrementCounter nie jest testowana. Dopisuję 3 testy.
+4. Metoda changePriceTo nie jest testowana we wszystkich przypadkach. Dopisuję 2 testy.
+5. Zauważam, że 3 metody (incrementCounter, decrementCounter, changePriceTo) operują na dwóch
+    polach (price, counter) jako jedyne metody. Wydzielam zatem te metody i pola do osobnej klasy ProductNumbers.
+    Ta klasa będzie odpowiadała za działania na tych liczbach, klasa Product będzie miała jej jedną instację i delegowała
+    odpowiednie zapytania do niej.
+    Testy z Products, które odpowiadały za testowanie funkcjonalności, które teraz są w ProductNumbers przenoszę
+    do ProductNumbersTest.
+6. Dodanie 2 metod prywatnych (checkPrice, checkCounter) w ProductNumber w celu uproszeczenia kodu.
+7. Rozbiłem test canFormatDescription na 3 testy i dopisałem 2 kolejne testy metody formatDesc.
+8. Dodałem 4 testy metody formatDesc.
+9. Zauważam, że 2 metody (replaceCharFromDesc, formatDesc) operują na dwóch
+   polach (desc, longDesc) jako jedyne metody. Wydzielam zatem te metody i pola do osobnej klasy ProductDescription.
+   Ta klasa będzie odpowiadała za działania na opisie produktu, klasa Product będzie miała jej jedną instację i delegowała
+   odpowiednie zapytania do niej.
+   Testy z Products, które odpowiadały za testowanie funkcjonalności, które teraz są w ProductNumbers przenoszę
+   do ProductDescriptionTest.
+10. Upraszczam instrukcję warunkową w metodach replaceCharFromDesc i formatDesc.
+11. Usuwam klasę ProductTest.
